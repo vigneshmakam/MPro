@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+<title>Mentor-Pro | Onboarding</title>
+<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+<link href="/images/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="/images/stylesheets/plugins.css" rel="stylesheet" type="text/css" />
+<link href="/images/css/onboarding.css" rel="stylesheet" type="text/css" />
+<!-- END GLOBAL MANDATORY STYLES -->  
+
+<link rel="stylesheet" type="text/css" href="/images/stylesheets/libs/select2.min.css">
+
+
+<!-- icons -->
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+
+
+</head>
+<body>
+
+
+<!-- Onboarding Process -->
+<div class="onboarding-process">
+
+<div class="onboarding-image">
+<div class="l-image">
+<img src="/images/onboarding/welcome.svg"/>
+<canvas id="bubbles"></canvas>
+</div>
+</div>
+
+
+
+<!-- Lets get Started -->
+<div class="onboarding-form" id="lets_started">
+<div class="onboarding-form-wrap">
+<div class="onboarding-container">
+<div class="onboarding-content">
+
+
+<h1 class="mt-5 mb-3 text-center"><span id="username"></span> Welcome to Mentor PRO!</h1>
+<p class="text-center">Your one stop shop for all your mentoring needs!</p>
+<h3 class="text-info text-center mt-4">We'll set up your account in just 3 steps!</h3>
+
+<div class="text-center mt-5">
+<button type="submit" class=" letStarted btn-lg btn btn-info" value="">Let's Get Started</button>
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+<!-- Lets get Started -->
+
+
+
+<!-- onboarding Processsing -->
+<div class="onboarding-form" id="onboarding">
+<div class="onboarding-form-wrap">
+<div class="onboarding-container1">
+<div class="onboarding-content">
+
+
+
+<div id="onboardingForm">
+
+<!-- area of experties: -->
+<div class="tab_one">
+<form id="_details">
+<p class="detil_head pb-2">Skill Details <span class="float-right">1 out of 3</span> </p>
+
+
+<div class="position-relative">
+<h5 class="mt-4">Select your area of expertise*</h5>
+
+<select name="experties" class="form-control tagging" multiple="multiple">
+<option>orange</option>
+<option>white</option>
+<option>purple</option>
+</select>
+</div>
+
+
+<div class="position-relative">
+<h5 class="mt-4">Choose skills (Choose minimum one)*</h5>
+<select name="skills" class="form-control tagging" multiple="multiple">
+<option>orange</option>
+<option>white</option>
+<option>purple</option>
+</select>
+</div>
+
+<div class="position-relative">
+<h5 class="mt-4">Tell about Yourself</h5>
+<div class="input-group mt-2">
+<textarea style="resize: none;" rows="4" id="bio" class="form-control" aria-label="With textarea"></textarea>
+</div>
+</div>
+
+
+<div class="position-relative">
+<h5 class="mt-4">Choose Days you are  avaliable for mentoring*</h5>
+<select name="daysavaliable"  class="form-control daysavaliable" multiple="multiple">
+<option selected value="O1" data-badge="">Weekends</option>
+<option value="O2" data-badge="">Monday</option>
+<option value="O3" data-badge="">Tuesday</option>
+<option value="O4" data-badge="">Wednesday</option>
+<option value="O5" data-badge="">Thursday</option>
+<option value="O6" data-badge="">Friday</option>
+<option value="O7" data-badge="">Saturday</option>
+<option value="O8" data-badge="">Sunday</option>
+</select>
+</div>
+
+<div class="position-relative">
+<div class="row">
+<div class="col-lg-12">
+<h5 class="mt-4">Choose Time solts your are avaliable for mentoring*</h5>
+</div>
+
+<div class="col-lg-6 mobile_space">
+<select name="timezone" class="form-control timezone" >
+
+<option selected disabled>Choose your time zone</option>
+<option  timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) </option>
+<option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00)</option>
+<option  timeZoneId="3" gmtAdjustment="GMT-10:00" useDaylightTime="0" value="-10">(GMT-10:00)</option>
+<option timeZoneId="4" gmtAdjustment="GMT-09:00" useDaylightTime="1" value="-9">(GMT-09:00) </option>
+<option timeZoneId="6" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) </option>
+<option timeZoneId="7" gmtAdjustment="GMT-07:00" useDaylightTime="0" value="-7">(GMT-07:00)</option>
+<option timeZoneId="10" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00)</option>
+<option timeZoneId="15" gmtAdjustment="GMT-05:00" useDaylightTime="1" value="-5">(GMT-05:00)</option>
+<option timeZoneId="17" gmtAdjustment="GMT-04:00" useDaylightTime="1" value="-4">(GMT-04:00)</option>
+<option timeZoneId="21" gmtAdjustment="GMT-03:30" useDaylightTime="1" value="-3.5">(GMT-03:30)</option>
+<option timeZoneId="22" gmtAdjustment="GMT-03:00" useDaylightTime="1" value="-3">(GMT-03:00) </option>
+<option timeZoneId="26" gmtAdjustment="GMT-02:00" useDaylightTime="1" value="-2">(GMT-02:00)</option>
+<option timeZoneId="27" gmtAdjustment="GMT-01:00" useDaylightTime="0" value="-1">(GMT-01:00) </option>
+<option timeZoneId="29" gmtAdjustment="GMT+00:00" useDaylightTime="0" value="0">(GMT+00:00) </option>
+<option timeZoneId="35" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00)</option>
+<option timeZoneId="43" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00)</option>
+<option timeZoneId="47" gmtAdjustment="GMT+03:00" useDaylightTime="0" value="3">(GMT+03:00) </option>
+<option timeZoneId="49" gmtAdjustment="GMT+03:30" useDaylightTime="1" value="3.5">(GMT+03:30) </option>
+<option timeZoneId="51" gmtAdjustment="GMT+04:00" useDaylightTime="1" value="4">(GMT+04:00)</option>
+<option timeZoneId="53" gmtAdjustment="GMT+04:30" useDaylightTime="0" value="4.5">(GMT+04:30)</option>
+<option timeZoneId="54" gmtAdjustment="GMT+05:00" useDaylightTime="1" value="5">(GMT+05:00)</option>
+<option timeZoneId="56" gmtAdjustment="GMT+05:30" useDaylightTime="0" value="5.5">(GMT+05:30)</option>
+<option timeZoneId="58" gmtAdjustment="GMT+05:45" useDaylightTime="0" value="5.75">(GMT+05:45)</option>
+<option timeZoneId="59" gmtAdjustment="GMT+06:00" useDaylightTime="1" value="6">(GMT+06:00)</option>
+<option timeZoneId="61" gmtAdjustment="GMT+06:30" useDaylightTime="0" value="6.5">(GMT+06:30) </option>
+<option timeZoneId="62" gmtAdjustment="GMT+07:00" useDaylightTime="0" value="7">(GMT+07:00) </option>
+<option timeZoneId="64" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00)</option>
+<option timeZoneId="71" gmtAdjustment="GMT+09:00" useDaylightTime="1" value="9">(GMT+09:00) </option>
+<option timeZoneId="73" gmtAdjustment="GMT+09:30" useDaylightTime="0" value="9.5">(GMT+09:30) </option>
+<option timeZoneId="74" gmtAdjustment="GMT+10:00" useDaylightTime="0" value="10">(GMT+10:00) </option>
+<option timeZoneId="79" gmtAdjustment="GMT+11:00" useDaylightTime="1" value="11">(GMT+11:00)</option>
+<option timeZoneId="81" gmtAdjustment="GMT+12:00" useDaylightTime="0" value="12">(GMT+12:00) </option>
+<option timeZoneId="82" gmtAdjustment="GMT+13:00" useDaylightTime="0" value="13">(GMT+13:00)</option>
+</select>
+</div>
+
+
+<div class="col-lg-6">
+<select name="time" class="form-control time" multiple="multiple">
+<option value="00:00">00.00 AM to 01:00 AM</option>
+<option value="01:00">01.00 AM to 02:00 AM</option>
+<option value="02:00">02.00 AM to 03:00 AM</option>
+<option value="03:00">03.00 AM to 04:00 AM</option>
+<option value="04:00">04.00 AM to 05:00 AM</option>
+<option value="05:00">05.00 AM to 06:00 AM</option>
+<option value="06:00">06.00 AM to 07:00 AM</option>
+<option value="07:00">07.00 AM to 08:00 AM</option>
+<option value="08:00">08.00 AM to 09:00 AM</option>
+<option value="09:00">09.00 AM to 10:00 AM</option>
+<option value="10:00">10.00 AM to 11:00 AM</option>
+<option value="11:00">12.00 AM to 13:00 PM</option>
+<option value="12:00">13.00 PM to 14:00 PM</option>
+<option value="13:00">14.00 PM to 15:00 PM</option>
+<option value="14:00">15.00 PM to 16:00 PM</option>
+<option value="15:00">16.00 PM to 17:00 PM</option>
+<option value="16:00">17.00 PM to 18:00 PM</option>
+<option value="17:00">18.00 PM to 19:00 PM</option>
+<option value="18:00">19.00 PM to 20:00 PM</option>
+<option value="19:00">20.00 PM to 21:00 PM</option>
+<option value="20:00">21.00 PM to 22:00 PM</option>
+<option value="21:00">22.00 PM to 23:00 PM</option>
+<option value="22:00">23.00 PM to 24:00 PM</option>
+
+</select>
+</div>
+
+</div>
+</div>
+
+
+
+
+<div class="float-right mt-3">
+<button class="btn  btn-primary btn-lg">Save and Continue</button>
+</div>
+
+</form>
+</div>
+<!-- area of experties: -->
+
+
+
+<!-- Educational Details -->
+<div class="tab_two">
+<p class="detil_head pb-2">Educational Details and Professional Details <span class="float-right">2 out of 3</span> </p>
+
+<form id="eduprof_details" action="/mentorOnBoarding" method="POST">
+
+
+<div class="position-relative">
+<h5 class="mt-4">Higest Qualification*</h5>
+<select name="highest_qual" class="form-control education_details">
+<option selected disabled>Choose </option>
+<option>orange</option>
+<option>white</option>
+<option>purple</option>
+</select>
+</div>
+
+
+<div class="position-relative">
+<div class="row">
+
+<div class="col-lg-6">
+<h5 class="mt-4">College/University</h5>
+<input type="text" class="form-control" placeholder="College/university name" aria-label="role">
+</div>
+
+<div class="col-lg-6">
+<h5 class="mt-4">Specialization</h5>
+<input type="text" class="form-control" placeholder="Specialization" aria-label="role">
+</div>
+
+
+</div>
+</div>
+
+<div class="position-relative">
+<h5 class="mt-4">Current Company*</h5>
+<input name="currentcomp" type="text" class="form-control" placeholder="Enter your company" aria-label="role">
+</div>	
+
+<div class="position-relative">
+<div class="row">
+
+<div class="col-lg-6">
+<h5 class="mt-4">Choose Your role</h5>
+<input type="text" class="form-control" placeholder="Enter your role" aria-label="role">
+</div>
+
+<div class="col-lg-6">
+<h5 class="mt-4">Add Company URL</h5>
+<input type="text" class="form-control" placeholder="Enter your company url" aria-label="role">
+</div>
+
+
+
+</div>
+
+</div>
+
+<div class="position-relative">
+<h5 class="mt-4">Certifications</h5>
+<div class="row  addmorelist">
+<div class="col-lg-8 mobile_space">
+<input type="text" class="form-control" placeholder="Certification Name" aria-label="role">
+</div>
+
+<div class="col-lg-4">
+<input type="date" class="form-control">
+</div>
+</div>
+
+
+<div class=" mt-1 mb-4 text-right">
+<span class="addmore">Add More</span>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div>
+<button class="btn btn-primary btn-lg float-right">Save and Continue</button>
+</div>
+
+
+</form>
+
+
+<button id="prev" class="btn btn-outline-primary btn-lg float-left">Prev</button>
+
+
+
+</div>
+<!-- Educational Details -->
+
+
+
+
+<!-- Personal Details -->
+<div class="tab_three">
+<p class="detil_head pb-2">Personal Details <span class="float-right">3 out of 3</span> </p>
+
+
+
+<form id="personal_details">
+
+
+
+<div class="position-relative mt-4">
+<div class="row">
+
+<div class="col-lg-6">
+<h5>Date of Birth*</h5>
+<input type="date" name="dob" class="form-control" placeholder="Enter your College/university name" aria-label="role">
+</div>
+
+<div class="col-lg-6">
+<h5>Gender*</h5>
+<select name="gender" class="form-control">
+<option selected disabled>Select</option>
+<option>Male</option>
+<option>Female</option>
+<option>Prefer not to disclose</option>
+
+</select>
+</div>
+
+
+
+</div>
+</div>
+
+
+<div class="position-relative mt-4">
+<div class="row">
+
+<div class="col-lg-6">
+<h5>Country*</h5>
+<select name="country" class="form-control personal_common">
+<option selected disabled>Country</option>
+<option>orange</option>
+<option>white</option>
+<option>purple</option>
+</select>
+</div>
+
+<div class="col-lg-6">
+<h5>City*</h5>
+<select name="city" class="form-control personal_common">
+<option selected disabled>City</option>
+<option>orange</option>
+<option>white</option>
+<option>purple</option>
+</select>
+</div>
+
+
+</div>
+</div>
+
+
+<div class="input-group mt-4">
+<div class="input-group-prepend">
+<span class="input-group-text" id="basic-addon1">
+<i data-feather="facebook"></i>
+</span>
+</div>
+<input type="text" class="form-control" placeholder="Facebook URL" aria-label="Facebook URL" aria-describedby="basic-addon1">
+</div>
+
+
+<div class="input-group mt-4">
+<div class="input-group-prepend">
+<span class="input-group-text" id="basic-addon1"><i data-feather="linkedin"></i></span>
+</div>
+<input type="text" class="form-control" placeholder="Linkedin URL" aria-label="Linkedin URL" aria-describedby="basic-addon1">
+</div>
+
+
+<div class="input-group mt-4">
+<div class="input-group-prepend">
+<span class="input-group-text" id="basic-addon1"><i data-feather="twitter"></i></span>
+</div>
+<input type="text" class="form-control" placeholder="Twitter URL" aria-label="Twitter URL" aria-describedby="basic-addon1">
+</div>
+
+
+<div class="mt-5">
+<button class="btn btn-primary btn-lg float-right">Let's Go</button>
+</div>
+
+</form>
+
+<button id="prev" class="btn btn-outline-primary btn-lg float-left">Prev</button>
+
+</div>
+<!-- Personal Details -->
+
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+<!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+<script src="/images/js/libs/jquery-3.1.1.min.js"></script>
+<script src="/images/bootstrap/js/popper.min.js"></script>
+<script src="/images/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+
+<!-- END GLOBAL MANDATORY SCRIPTS -->
+<script src="/images/js/common.js"></script>
+<script src="/images/js/libs/select2.min.js"></script>
+<script src="/images/js/onboarding.js"></script>
+
+
+
+
+<script>
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

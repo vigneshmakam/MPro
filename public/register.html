@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+<title>Mentor-Pro | Register</title>
+<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+<link href="/images/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="/images/stylesheets/plugins.css" rel="stylesheet" type="text/css" />
+<link href="/images/css/form.css" rel="stylesheet" type="text/css" />
+<!-- END GLOBAL MANDATORY STYLES -->  
+
+<!-- icons -->
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+
+
+</head>
+<body class="form">
+
+
+
+<div class="form-container">
+<div class="form-form">
+<div class="form-form-wrap">
+<div class="form-container">
+<div class="form-content">
+
+<h1 class="mt-2 mb-2">Get started with a  free account</h1>
+
+<form class="text-left" id="register_page" action = "register" method="post">
+<div class="form">
+
+
+<div id="username-field" class="field-wrapper input">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+<input id="displayname" name="displayname" type="text" value="" placeholder="Fullname">
+</div>
+
+
+<div id="email-field" class="field-wrapper input">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>
+<input id="email" name="email" type="text" value="" placeholder="Email">
+</div>
+
+<div id="password-field" class="field-wrapper input">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+<input id="password" name="password" type="password" value="" placeholder="Password">
+
+<div id="password-field" class="field-wrapper input">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+<input id="passwordCheck" name="passwordCheck" type="password" value="" placeholder="Password">
+
+<i id="show_password" data-feather="eye"></i>
+
+</div>
+
+
+<div class="field-wrapper input text-center pt-0" id="role">
+
+
+<div id="role" class="">
+<button type = "button" class = "btn btn-outline-primary mb-2 mr-2" id= "mentor" value = "mentor">I'm a Mentor</button>
+<button type="button" class="btn btn-outline-primary mb-2 "id= "mentee" value = "mentee">I'm a Mentee</button>
+
+</div>
+
+</div>
+
+
+<div class="field-wrapper terms_condition">
+<div class="n-chk new-checkbox checkbox-outline-primary">
+<label class="new-control new-checkbox checkbox-outline-primary">
+<input name="agree" type="checkbox" class="new-control-input">
+<span class="new-control-indicator"></span><span>I agree to the <a href="javascript:void(0);">  terms and conditions </a></span>
+</label>
+</div>
+</div>
+
+
+<div class="justify-content-between text-center">
+
+<div class="field-wrapper">
+<button type="submit" class=" btn-lg btn btn-primary" value="">Get Started!</button>
+</div>
+</div>
+
+</div>
+</form>  
+
+
+<p class="or text-center mt-4">Or Signup using</p>
+
+<div id="social_sign" class="text-center">
+<button class="btn btn-outline-primary mr-3">
+<i data-feather="linkedin"></i> &nbsp; Linkedin</button>
+
+
+<button class="btn btn-outline-primary"><i data-feather="facebook"></i> &nbsp; Facebook</button>
+<a href='/auth/google'>Google</a>
+<a href='/auth/facebook'>Facebook</a>
+</div>
+
+
+
+<p class="signup-link text-center mt-4">Already have an account? <a href="javascript:void(0)" onclick="login()" >Log in</a></p>
+
+
+</div>                    
+</div>
+</div>
+</div>
+<div class="form-image">
+<div class="l-image">
+<!--img src="../public/images/form/banner2.svg"/ -->
+<img src="/images/form/banner2.svg" alt="My_Logo">
+<canvas id="bubbles"></canvas>
+
+</div>
+</div>
+</div>
+
+
+<!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+<script src="/images/js/libs/jquery-3.1.1.min.js"></script>
+<script src="/images/bootstrap/js/popper.min.js"></script>
+<script src="/images/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+<!-- END GLOBAL MANDATORY SCRIPTS -->
+<script src="/images/js/form.js"></script>
+<script src="/images/js/link.js"></script>
+<script src="/images/js/common.js"></script>
+
+
+</body>
+</html>
