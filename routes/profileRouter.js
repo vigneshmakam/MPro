@@ -1,5 +1,6 @@
 const { response } = require("express");
 const router = require("express").Router();
+
 const fs = require('fs');
 
 const authCheck = (req, res, next) => {
@@ -11,9 +12,9 @@ const authCheck = (req, res, next) => {
     }
 }
 
-router.get("/", (req,res) => {
+router.get("/", authCheck, (req,res) => {
     console.log(req.user, req.newUser);
-    res.send("In the profile route. Welcome -"  + req.user.id);
+    res.send("In the profile route. Welcome -"  + req.user.profile.name + " Google---"+ req.user.displayname);
 });
 
 router.get("/mentorOnBoarding", (req, res) => {

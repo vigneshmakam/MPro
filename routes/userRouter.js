@@ -10,6 +10,7 @@ const { promisify } = require('util');
 const crypto = require('crypto');
 const randomBytesAsync = promisify(crypto.randomBytes);
 const passport = require('passport');
+const { Strategy: LinkedInStrategy } = require('passport-linkedin-oauth2');
 const { Strategy: FacebookStrategy } = require('passport-facebook');
 const randomstring = require('randomstring');
 
@@ -164,7 +165,7 @@ router.post("/login", async (req, res) => {
 // route for facebook authentication and login
 router.get('/facebook', passport.authenticate('facebook', { scope: ['email', 'public_profile'] }));
 
-router.get('/facebook/callback', passport.authenticate('facebook', { failureRedirect: '/login' }), (req, res) => {
+router.get('/facebook/callback', passport.authenticate('facebook', { failureRedirect: '/auth/login' }), (req, res) => {
   
   res.redirect(req.session.returnTo || '/profile/');
 });
